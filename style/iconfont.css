@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('../../淘宝模拟练习/img/iconfont.eot?t=1562844072315'); /* IE9 */
+  src: url('../../淘宝模拟练习/img/iconfont.eot?t=1562844072315#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOAAAsAAAAAB4QAAAM0AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqCaIJIATYCJAMMCwgABCAFhG0HOhuSBhHVmxvI/gLZGA6xv4ipLZuzpkm+NSo/WZAkGjiLc1NP730HjAzUgAQAAAAACJ7v137nvt1935ymntRsOqGZhGwhMSQaySOhEJoJD/TH8P1YFcgGMhtX+KiTBpQpugYpkO28MTILhrg2N6tkGBNhmJLzvJ++I12McCH8CID+HzD/OnDOVWgUbR6FA9weafDmBswCOfiixA74ucGJZBhwYhmUcTDI6f8JUID7BlxOf9oLjDqgBEMZc9me+BhgHFBge9tTZGWYCDaM3UR5EI8hwClGvdDR1dpLMRNYJUAW5xamKE75mTWdwk7okoOZHAPY4w50T7HPvy8/xlAMxUrAxs7pulla3vGXtVwxJQDDeFFAOwYGyAITMlwaH5TCYpbE6dhzfaNmEmqsDFzvWjX8wwNFIIVAuxtAmlRSeMGxPnbQovGsHzIAaGAH63ACcGE9BqsmkMtL4E+vndkqyotZ/67czsvyaec6G16WFk27J/l2mVnOWqfFkEvnp24K9VA2fK5ss/5ep7f5Y3YvuKVfuXXmhp1b7w9dtndih3wj5fElVXs3pvfk+H25w6m1rZ1PvmoCy5JI12yoHUvNe9z4dbfh1Wu55dY+UyN7z0Nx02av19fgq3IxMtrYqDUOTE3xqfmXwr/5M/6dxxWrjYraTBlUlGduyD2R6urIhienRM41NnR+wZQZTqmeiS3f05qNAvxL4lXVOaaxn/Mapw9P1KpKX4s6A3gOeM7N7Vphp9Da8Cu8mRqC2TWBgJFtG7V6v2JoVHCjWlGrp/gPpIPe+rsjt1sWdpEYik00DHZJpMlmweKSC82uAk6Zuo+7hCxJJJeADBsChN8VFK9rGPweSJN9hSXKHzR/SHDqD6ELXVICmaoYtaAD84dkafcoJFXQecdwrZqTJs6/kc+UgaHts5Ub7shjbDk/YRTx4Jk2mIXncF0JDqaMVtoockxd58ve1FraVCVGLejA/CFZ2j0dLVXu83cM16q5RtJRfSOfaXIY2r4FebPvrSTXIuf8hFHEg2faYBaiuMIiwVE+L6OVNvbIH1MnDfNt7e38zu35jkEpMJhCDClkTn1mUwS6vpeNqBQ=') format('woff2'),
+  url('iconfont.woff?t=1562844072315') format('woff'),
+  url('iconfont.ttf?t=1562844072315') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('../../淘宝模拟练习/img/iconfont.svg?t=1562844072315#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-:before {
+  content: "\e60b";
+}
+
+.icon-gouwuche:before {
+  content: "\e607";
+}
+

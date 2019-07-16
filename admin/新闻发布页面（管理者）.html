@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻发布页面（管理者）</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="icon" href="../images/newslogo2.ico" type="image/x-icon">
+    <style>
+        .text{
+            width: 90%;
+            height: 50%;
+        }
+        input{
+            margin: 1%;
+            font-size: 20px;
+        }
+        .container-news{
+            width: 800px;
+            height: 555.5px;
+            border-radius: 5%;
+            margin: auto;
+            margin-top: 5%;
+            background-color: #fff;
+        }
+        #cancel,#agree{
+            padding: 1%;
+        }
+        textarea{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-news">
+    <form action="#" method='post'>
+<div>
+    标题<input type="text" name="title" value="">
+</div>
+    <hr>
+<div>
+    类别<input type="text" name="category" value="">
+    来源<input type="text" name="author" value="" >
+</div>
+<hr>
+<div>
+    正文<hr>
+    <textarea style="overflow-y:visible; resize: none"  rows="15" cols="78" name="text" ></textarea>
+</div>
+
+<div>
+    <input type="submit" name="agree" id="agree" value="确认发布">
+    <a href="管理者管理新闻.html"><input type="button" name="cancel" id="cancel" value="放弃编辑"></a>
+</div>
+    </form>
+</div>
+<div class="bottom">
+    <div class="tips"><span>联系电话：xxx</span><span>传真：xxx</span> <span>地址：xxx</span></div>
+    <div id="text">本页面由xxx工作室提供支持</div>
+</div>
+
+</body>
+</html>
