@@ -1,0 +1,42 @@
+span{
+    vertical-align: middle;
+}
+
+.container2{
+    display: flex;
+    flex: auto;
+}
+.contents{
+    height: 40px;
+    border: 2px solid #bec5cc;
+    display: flex;
+    flex: auto;
+    vertical-align: middle;
+    margin: 0px 40px;
+    font-size: 20px;
+}
+.txt{
+    font:30px "Segoe UI";
+    width: 888px;
+    margin: 10px;
+    display: flex;
+    flex: auto;
+}
+#text{
+    height: 15em;
+    width: 100%;
+    overflow-y:visible;
+    resize: none;
+    display: flex;
+    flex:auto;
+}
+.textbox{display: flex;flex: auto}
+.button{
+    width: initial;
+    float:right;
+    margin: 10px;
+}
+.action{
+    border: 2px skyblue;
+    border-style: hidden hidden solid solid;
+}
