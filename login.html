@@ -17,6 +17,7 @@
 </head>
 <body>
 <div class="container">
+
     <form action='http://www.baidu.com' method='post' onsubmit="return checkForm()" id="test-form">
     <div class="login-box">
         <div class="login-title">
@@ -33,7 +34,13 @@
             </p>
 
         </div>
-       {% error_message %}
+
+            {% if error_message %}
+            <p>
+                    {{ error_message }}
+            </p>
+            {% endif %}
+
         <div class="login-btn">
             <input type="submit" name="login" value="login" id="login">
         </div>

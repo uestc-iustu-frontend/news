@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit-user</title>
+    <link rel="stylesheet" href="../style/admin-common.css">
+    <link rel="stylesheet" href="../style/edit-user.css">
+
+</head>
+    <body>
+    <div class="outer">
+        <div class="header">
+            <p>新闻管理系统<span>（管理员）</span></p>
+        </div>
+        <div class="body-box">
+            <div class="left-nav" >
+                <div class="edit-user">编辑发布者</div>
+                <div class="edit-program">编辑栏目</div>
+                <div class="edit-news">编辑新闻</div>
+            </div>
+
+            <div class="right-box"  >
+
+                <div class="edit-list">
+                    <table id="order" class="order">
+                        <tr>
+                            <td id="allselect"> <input type="checkbox" id="alls"  onclick="allSelect(this)" />全选</td>
+                            <td id="author">发布者</td>
+                            <td id="button">操作</td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="edit-btn">
+                    <form action=""  method="post">
+                        <input type="button" value="+"  onclick="add()" />
+                        <input type="button" value="-"   onclick="dels()" />
+                        <input type="submit" value="SAVE" >
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/edit-user.js"></script>
+</body>
+</html>

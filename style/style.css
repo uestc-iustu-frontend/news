@@ -109,12 +109,11 @@ body,.total,.bottom{
 }
 
 .bottom{
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 80%;
     left:50%;
+    margin-top: 2%;
     margin-left:-40%;
-    margin-bottom: 1%;
 }
 .tips{
     width: 100%;
