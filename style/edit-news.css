@@ -1,0 +1,41 @@
+
+.edit-news{
+    background-color: #7d8586;
+}
+
+.edit-list table,.edit-list form{
+    margin: 0;
+    padding: 0;
+}
+
+tr,td {
+    border:none;
+}
+table{
+    width: 100%;
+}
+
+td{
+    border-bottom:0.5px solid #c4c6c6 ;
+    padding: 0.5%;
+    font-size: 90%;
+}
+#allselect,#title,#time,#author,#button{
+    text-align: center;
+}
+
+#allselect{
+    width: 8%;
+}
+#title{
+    width: 67%;
+}
+#time{
+    width:10%
+}
+#author{
+    width: 10%;
+}
+#button{
+    width: 5%;
+}

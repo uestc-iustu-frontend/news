@@ -1,0 +1,93 @@
+.header{
+    height: 100px;
+    background-color: #00cdb1;
+}
+.header p{
+    line-height: 100px;
+    color: #fff;
+    margin-left: 43px;
+    font-size: 38px;
+}
+.header span{
+    font-size:25px;
+}
+body,p,ul,li,.container,.header{
+    margin: 0;
+    padding: 0;
+}
+.edit-user,.edit-news,.edit-program{
+    border-bottom:1px solid #818181;
+    height: 10vh;
+    color: #fff;
+    text-align: center;
+    line-height: 10vh;
+}
+
+body,html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.outer {
+    height: 100%;
+    box-sizing: border-box ;
+    position: relative;
+}
+
+.body-box{
+    height: 100%;
+}
+.left-nav,td,tr{
+    margin: 0;
+    padding: 0;
+}
+.right-box{
+    margin: 3%;
+    padding: 0;
+    float: left;
+    width:74%;
+    height: inherit;
+}
+.left-nav{
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color: #525256;
+}
+
+.edit-btn input{
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    background-color:#7d8586;
+    border: 0;
+    width: 100%;
+    color:#fff;
+    margin: 7%;
+}
+.edit-btn{
+    position: fixed;
+    bottom:5%;
+    right: 5%;
+}
+
+.edit-list table,.edit-list form{
+    margin: 0;
+    padding: 0;
+}
+
+tr,td {
+    border:none;
+}
+table{
+    width: 100%;
+}
+
+td{
+    border-bottom:0.5px solid #c4c6c6 ;
+    padding: 0.5%;
+    font-size: 90%;
+}

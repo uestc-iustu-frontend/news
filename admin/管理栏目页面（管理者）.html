@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <title>批量管理发布者</title>
     <link rel="icon" href="../images/newslogo2.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../js/lib/bootstrap/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/style.css">
-    <script src="../js/lib/bootstrap/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/npm.js"></script>
-    <script src="../js/lib/bootstrap/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <script type="text/javascript">
 
         //      添加函数
@@ -177,20 +174,22 @@
 
     </script>
     <link rel="stylesheet" type="text/css" href="../style/style2.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <script src="../js/lib/bootstrap.js"></script>
+    <script src="../js/lib/npm.js"></script>
 </head>
 
 
 <body onload="allsn()" onclick="showCheckbox()">
 
 <div id="title" class="clearfix">栏 目 清 单</div>
-<br><br>
+
 <form action=""  method="post">
-    <a href="添加栏目.html"><input type="button" value="添加栏目" class="btn btn-default" /></a>
+   <input type="button" value="添加栏目" class="btn btn-default" />
     <input type="button" value="删除已选项" class="btn btn-default" onclick="dels()" />
     <input type="submit" value="保存" class="btn btn-default">
 </form>
 
-<hr><br><br><br>
 <table id="order" border="1" class="order">
     <tr>
         <td> <input type="checkbox" id="alls"  onclick="allSelect(this)" />全选</td>
@@ -201,6 +200,7 @@
     </tr>
 
 </table>
+
 <div class="bottom">
     <div class="tips"><span>联系电话：xxx</span><span>传真：xxx</span> <span>地址：xxx</span></div>
     <div id="text">本页面由xxx工作室提供支持</div>

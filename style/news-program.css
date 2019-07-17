@@ -1,0 +1,15 @@
+.edit-program{
+    background-color: #7d8586;
+}
+#allselect,#program,#button{
+    text-align: center;
+}
+#allselect{
+    width: 10%;
+}
+#program{
+    width: 80%;
+}
+#button{
+    width: 10%;
+}

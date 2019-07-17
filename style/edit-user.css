@@ -1,0 +1,17 @@
+.edit-user{
+    background-color: #7d8586;
+}
+
+#allselect,#author,#button{
+    text-align: center;
+}
+
+#allselect{
+    width: 10%;
+}
+#author{
+    width: 80%;
+}
+#button{
+    width: 10%;
+}

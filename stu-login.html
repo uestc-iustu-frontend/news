@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stu-login</title>
+    <link rel="stylesheet" href="style/stu-login.css">
+    <link rel="stylesheet" href="style/admin-common.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <p>新闻管理系统<span>（管理员）</span></p>
+    </div>
+        <div class="input-box-container">
+
+            <div class="input-header">
+                <span id="s-user">发布者</span>
+                <span id="s-ad">管理者</span>
+            </div>
+
+            <div>
+
+                <form action="" method="post">
+
+                    <ul>
+                        <li><input type="text" name="username" placeholder="用户名" value=""></li>
+                        <li><input type="password" name="password" value="" id="password" placeholder="密码"></li>
+                        <li><input type="text" name="checkcode" placeholder="验证码" value="">
+                        </li>
+                    </ul>
+
+                    <div class="btn">
+                        <input type="submit" name="login" id="login" value="登录">
+                        <a href=""><input type="button" id="register" name="register" value="注册"></a>
+                        <a href="" class="forget-pw">忘记密码</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+</div>
+
+<script src="js/stu-login.js"></script>
+</body>
+</html>

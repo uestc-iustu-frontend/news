@@ -1,0 +1,95 @@
+ul,li{
+    list-style:none;
+    width: 372px;
+    border: none;
+}
+.input-header span{
+    display: inline-block;
+    width:49%;
+    text-align: center;
+    color:#a0a0a0;
+}
+li span{
+    position: absolute;
+    right: 0;
+}
+
+span{
+    font-size:25px;
+
+}
+input,img {
+    vertical-align: middle;
+}
+
+.input-header{
+    margin-bottom:32px;
+}
+
+.input-box-container{
+    width: 372px;
+    margin: 137px auto;
+    top:50%;
+}
+li input{
+    color:#a0a0a0;
+}
+
+ul{
+    display: block;
+    border: 1px solid #c4c6c6;
+    border-radius: 5px;
+}
+
+input{
+    width: 84%;
+    height: 50px;
+    border:none;
+    font-size:21px;
+    padding: 1.5% 8%;
+    border-radius: 5px;
+}
+#s-register{
+    text-align: center;
+    color:#00cdb1;
+    font-size:31px;
+}
+
+li #password,li .input-border-top{
+    border-radius: 0;
+    border-top: 1px solid #c4c6c6;
+    border-bottom: 1px solid #c4c6c6;
+}
+
+
+
+.btn{
+    margin-top: 36px;
+}
+
+.btn input{
+    width: 100%;
+    height: 49px;
+    border-radius: 5px;
+}
+
+.btn #login{
+    background-color: #00cdb1;
+    color: #fff;
+    border:1px solid #00cdb1  ;
+}
+.btn #register{
+    background-color: #fff;
+    color: #00cdb1;
+    border:1px solid #00cdb1  ;
+}
+.btn input{
+    margin-bottom: 13px;
+}
+.forget-pw{
+    display:block;
+    float: right;
+    margin-top: 13px;
+    color: #00cdb1;
+}
+
