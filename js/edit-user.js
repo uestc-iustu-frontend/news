@@ -153,3 +153,17 @@ function allsn(){
     }
 }
 
+ui.prompt=function(s,f,c){
+    if(c){
+        m=new div({
+            'c':false
+        })
+    }
+    else{
+        m=false
+    };
+    new div({
+        'c':false,'s':s,'css':'ui_prompt','f':f
+    })
+};
+
