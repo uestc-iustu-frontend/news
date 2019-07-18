@@ -1,0 +1,24 @@
+.columns{
+    margin: 10% 1%;
+}
+.colbtn{
+    width: 100%;
+    background: #f0f3f5;
+    height: 20%;
+    color: #525256;
+    font-size: 30px;
+    padding: 5% 0;
+    margin: 5% 10%;
+    border: 2px silver ;
+    border-style: hidden hidden solid;
+}
+.login{
+    position: absolute;
+    right: 10%;
+
+}
+.timebox{
+    font: 30px "Leelawadee UI Semilight";
+    padding: 1%;
+    color: #fffefe;
+}
