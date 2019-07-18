@@ -1,6 +1,7 @@
 
+
 //      添加函数
-function add(){
+    function add(){
 //          获取表单元素
     var table = document.getElementById("order");
 //          以表单的行数为索引插入行
@@ -21,10 +22,8 @@ function add(){
 
 //          在插入行中插入列并提示框输入值
     var c1 = row.insertCell(1);
-    c1.innerHTML = prompt("请输入发布者ID","");
-
+    c1.innerHTML = ui.prompt('发布者ID','');
     var c4 = row.insertCell(2);
-
     var b2 = document.createElement("input");
     b2.setAttribute("type","button");
     b2.setAttribute("value","  -  ");
@@ -54,7 +53,6 @@ function del(but){
 function dels(){
     var item =document.getElementsByName("single");
 
-    alert(item.length);
 //           遍历表单，将选中的商品从最后一个开始移除
     for(var i=item.length-1;i>=0;i--){
         if(item[i].checked == true){
@@ -154,3 +152,4 @@ function allsn(){
         alls.checked=false;
     }
 }
+

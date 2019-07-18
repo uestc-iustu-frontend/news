@@ -20,15 +20,18 @@ td{
     padding: 0.5%;
     font-size: 90%;
 }
-#allselect,#title,#time,#author,#button{
+#allselect,#title,#time,#author,#button,#nav{
     text-align: center;
 }
 
 #allselect{
     width: 8%;
 }
+#nav{
+    width: 7%;
+}
 #title{
-    width: 67%;
+    width: 60%;
 }
 #time{
     width:10%

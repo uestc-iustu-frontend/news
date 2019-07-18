@@ -22,13 +22,16 @@
 
 //          在插入行中插入列并提示框输入值
         var c1 = row.insertCell(1);
-        c1.innerHTML = prompt("请输入新闻标题","");
+        c1.innerHTML = prompt("请输入新闻栏目","");
         var c1 = row.insertCell(2);
-        c1.innerHTML = prompt("请输入发布时间","");
+        c1.innerHTML = prompt("请输入新闻标题","");
         var c1 = row.insertCell(3);
+        c1.innerHTML = prompt("请输入发布时间","");
+        var c1 = row.insertCell(4);
         c1.innerHTML = prompt("请输入发布者ID","");
 
-        var c4 = row.insertCell(4);
+
+        var c4 = row.insertCell(5);
 
         var b2 = document.createElement("input");
         b2.setAttribute("type","button");
