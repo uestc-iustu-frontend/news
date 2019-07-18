@@ -8,6 +8,7 @@ ul,li{
     width:49%;
     text-align: center;
     color:#a0a0a0;
+    cursor: pointer;
 }
 li span{
     position: absolute;
@@ -65,6 +66,7 @@ li #password,li .input-border-top{
 
 .btn{
     margin-top: 36px;
+    cursor: pointer;
 }
 
 .btn input{
@@ -77,15 +79,18 @@ li #password,li .input-border-top{
     background-color: #00cdb1;
     color: #fff;
     border:1px solid #00cdb1  ;
+    cursor: pointer;
 }
 .btn #register{
     background-color: #fff;
     color: #00cdb1;
     border:1px solid #00cdb1  ;
+    cursor: pointer;
 }
 .btn input{
     margin-bottom: 13px;
 }
+
 .forget-pw{
     display:block;
     float: right;
