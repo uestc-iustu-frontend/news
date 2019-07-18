@@ -29,7 +29,8 @@ input,img {
 
 .input-box-container{
     width: 372px;
-    margin: 137px auto;
+
+    margin: 120px auto;
     top:50%;
 }
 li input{

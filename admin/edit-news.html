@@ -12,11 +12,11 @@
             <p>新闻管理系统<span>（管理员）</span></p>
         </div>
         <div class="body-box">
-            <div class="left-nav" >
-                <div class="edit-user">编辑发布者</div>
-                <div class="edit-program">编辑栏目</div>
-                <div class="edit-news">编辑新闻</div>
-            </div>
+            <ul class="left-nav" >
+                <li class="edit-user"><a>编辑发布者</a></li>
+                <li class="edit-program"><a>编辑栏目</a></li>
+                <li class="edit-news"><a>编辑新闻</a></li>
+            </ul>
 
             <div class="right-box"  >
 
@@ -24,6 +24,7 @@
                     <table id="order" class="order">
                         <tr>
                             <td id="allselect"> <input type="checkbox" id="alls"  onclick="allSelect(this)" />全选</td>
+                            <td id="nav">栏目</td>
                             <td id="title">标题</td>
                             <td id="time">发布时间</td>
                             <td id="author">发布者</td>

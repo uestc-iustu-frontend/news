@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>edit-user</title>
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
     <link rel="stylesheet" href="../style/admin-common.css">
     <link rel="stylesheet" href="../style/edit-user.css">
+
+
 
 </head>
     <body>
@@ -12,12 +16,13 @@
         <div class="header">
             <p>新闻管理系统<span>（管理员）</span></p>
         </div>
+
         <div class="body-box">
-            <div class="left-nav" >
-                <a href=""><div class="edit-user">编辑发布者</div></a>
-                <a href=""><div class="edit-program">编辑栏目</div></a>
-                <a href=""><div class="edit-news">编辑新闻</div></a>
-            </div>
+            <ul class="left-nav" >
+                <li class="edit-user"><a>编辑发布者</a></li>
+                <li class="edit-program"><a>编辑栏目</a></li>
+                <li class="edit-news"><a>编辑新闻</a></li>
+            </ul>
 
             <div class="right-box"  >
 
@@ -32,8 +37,9 @@
                     </table>
                 </div>
                 <div class="edit-btn">
+
                     <form action=""  method="post">
-                        <input type="button" value="+"  onclick="add()" />
+                        <input type="button" value="+"  data-toggle="modal" onclick="add()" />
                         <input type="button" value="-"   onclick="dels()" />
                         <input type="submit" value="SAVE" >
                     </form>
@@ -42,6 +48,8 @@
             </div>
         </div>
     </div>
+    <script src="../js/lib/jquery-3.2.1.min.js"></script>
     <script src="../js/edit-user.js"></script>
+    <script type="text/javascript" src="../js/lib/yu.js"></script>
 </body>
 </html>
