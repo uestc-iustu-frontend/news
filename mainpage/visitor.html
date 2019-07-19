@@ -6,30 +6,36 @@
     <link rel="stylesheet" href="../style/framework.css">
     <link rel="stylesheet" href="../style/usersNews.css">
     <link rel="stylesheet" href="../style/mainpage.css">
+    <link rel="stylesheet" href="../style/iconfont.css">
+
 </head>
 <body>
 <div class="head">
     <span id="headtittle">新闻系统</span>
     <span class="timebox"></span>
-    <button class="action login">登陆</button>
+    <button class="action login btn-default">登陆</button>
 </div>
 
 <div class="bigbox">
     <div class="leftcol">
         <div class="module">
-            <button class="sidebtn" id="thisModule">主页</button>
+            <button class="sidebtn " id="thisModule">主页</button>
             <button class="sidebtn">我的新闻</button>
             <button class="sidebtn">新闻发布</button>
         </div>
     </div>
     <div class="columns">
-        <button class="colbtn" id="thisColumn">栏目1</button>
-        <button class="colbtn">栏目2</button>
+        <button class=" colbtn" id="thisColumn">栏目1</button>
+        <button class="colbtn" id="colbtn2">栏目2</button>
         <button class="colbtn">栏目3</button>
     </div>
     <div class="rightcol">
-        <div class="box">
-            <form action="" method="post" ><input id="search" type="text"></form>
+
+        <div class="header-search search-box">
+            <form class="search-form" action="" method="post">
+                <input type="search" name="keyword" class="search-text"/>
+                <input type="submit" value="&#xe60b" class="search-botton iconfont" />
+            </form>
         </div>
 
     </div>
