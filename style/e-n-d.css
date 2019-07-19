@@ -1,0 +1,18 @@
+
+input{
+    margin: 1%;
+    font-size: 20px;
+}
+.container-news{
+    width: 800px;
+    height: 555.5px;
+    border-radius: 5%;
+    margin: auto;
+    background-color: #fff;
+}
+#cancel,#agree{
+    padding: 1%;
+}
+textarea{
+    font-size: 20px;
+}

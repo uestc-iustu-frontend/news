@@ -2,40 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>edit-news-details</title>
+    <title>新闻发布页面（管理者）</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/e-n-d.css">
+    <link rel="stylesheet" href="../style/admin-common.css">
+    <script src="../js/edit-news.js"></script>
+    <link rel="stylesheet" href="../images/iconfont.css">
+    <link rel="icon" href="../images/newslogo2.ico" type="image/x-icon">
+
 </head>
 <body>
 <div class="outer">
     <div class="header">
-    <p>新闻管理系统<span>（管理员）</span></p>
-</div>
-    <div class="rightcol">
-    <div class="box">
-        <div class="container">
-            <div class="txt container2" id="bt">
-                <span>标题</span><form action="" method="post" class="textbox"><input class="contents" id="title" name="title" type="text"> </form>
-            </div>
-            <div class="container2">
-                <div class="txt" id="lb">
-                    <span>类别</span><form action="" method="post"><input class="contents" id="category" name="category" type="text"></form>
-                </div>
-                <div class="txt" id="ly">
-                    <span>来源</span><form action="" method="post"><input class="contents" id="author" name="author" type="text"></form></div>
-            </div>
-            <div class="txt container2" >
-                <span>正文</span>
-                <form action="" method="post" class="textbox">
-                    <textarea id="text" class="contents" name="text"></textarea>
+        <p>新闻管理系统<span>（管理员）</span></p>
+    </div>
+
+    <div class="body-box">
+        <ul class="left-nav" >
+            <li class="edit-user"><a>编辑发布者</a></li>
+            <li class="edit-program"><a>编辑栏目</a></li>
+            <li class="edit-news"><a>编辑新闻</a></li>
+        </ul>
+
+        <div class="right-box"  >
+
+            <div class="container-news">
+                <form action="#" method='post'>
+                    <div>
+                        标题<input type="text" name="title" value="">
+                    </div>
+
+                    <div>
+                        类别<input type="text" name="category" value="">
+                        来源<input type="text" name="author" value="" >
+                    </div>
+                    <div>
+                        正文
+                        <textarea style="overflow-y:visible; resize: none"  rows="15" cols="78" name="text" ></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" name="agree" id="agree" value="确认发布">
+                        <a href=""><input type="button" name="cancel" id="cancel" value="放弃编辑"></a>
+                    </div>
                 </form>
             </div>
-            <div class="button">
-                <button id="submit" class="action">确认修改</button>
-                <button id="cancel" class="action">放弃编辑</button>
-                <button id="delete" class="action">删除新闻</button>
-            </div>
+
         </div>
     </div>
 </div>
-</div>
+<script src="../images/iconfont.js"></script>
 </body>
 </html>
