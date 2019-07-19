@@ -22,7 +22,7 @@
 
 //          在插入行中插入列并提示框输入值
     var c1 = row.insertCell(1);
-    c1.innerHTML = ui.prompt('发布者ID','');
+    c1.innerHTML = prompt('发布者ID','');
     var c4 = row.insertCell(2);
     var b2 = document.createElement("input");
     b2.setAttribute("type","button");
@@ -152,4 +152,18 @@ function allsn(){
         alls.checked=false;
     }
 }
+
+ui.prompt=function(s,f,c){
+    if(c){
+        m=new div({
+            'c':false
+        })
+    }
+    else{
+        m=false
+    };
+    new div({
+        'c':false,'s':s,'css':'ui_prompt','f':f
+    })
+};
 
