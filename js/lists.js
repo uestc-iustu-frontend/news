@@ -1,5 +1,5 @@
 
-window.onload = function(){
+function listBack(){
     // 鼠标移动改变背景,可以通过给每行绑定鼠标移上事件和鼠标移除事件来改变所在行背景色。
     let row=document.getElementsByTagName("tr");
     for(let i=0;i<row.length;i++){
@@ -11,7 +11,7 @@ window.onload = function(){
         }
     }
 }
-
+addLoadEvent(listBack);
 function show(lb, title) {
     if (title!=null&&title!=""){
         let newrow=document.createElement("tr");
@@ -36,7 +36,7 @@ function show(lb, title) {
         let row=document.getElementsByTagName("tr");
         for(let i=0;i<row.length;i++){
             row[i].onmouseover=function () {
-                row[i].style.backgroundColor="#9aa8a3";
+                row[i].style.backgroundColor="#f2f2f2";
             }
             row[i].onmouseout=function () {
                 row[i].style.backgroundColor="#fff";

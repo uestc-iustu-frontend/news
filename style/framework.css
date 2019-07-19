@@ -48,6 +48,7 @@ button{
     height: calc(100% - 100px - 70px);
     min-height: 500px;
     padding-bottom: 0px;
+    background-color: #f9fffe;
 }
 .leftcol{
     width: 370px;

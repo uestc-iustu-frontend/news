@@ -1,20 +1,19 @@
-.order{
-    display: inline-block;
-    background-color: aliceblue;
-    border: 2px darkcyan;
-    border-style: hidden hidden solid ;
+#title,#text{
+    flex: auto;
+    padding: 1px 0px
 }
-button{
-    background:white;
-    border: 0px hidden;
-    width: 90px;
-    display: inline-block;
-
-}
+#text{height: initial}
 .searchbox{
     margin: 20px;
+    flex: auto;
 }
-#serch{
+.rightcol{
+    margin: 0 auto;
+}
+.box{
+    margin: 10% 0;
+}
+#search{
     width: 50%;
     height:30px;
     border: 2px solid skyblue;
@@ -23,7 +22,17 @@ button{
 }
 .action{
     float: right;
-    font: 20px "Segoe UI Black";
-    width: initial;
-    border: 2px solid skyblue;
+}
+#thisModule{background-color: #7d8586}
+tr,td {
+    border:none;
+}
+table{
+    width: 100%;
+}
+
+td{
+    border-bottom:0.5px solid #c4c6c6 ;
+    padding: 0.5%;
+    font-size: 90%;
 }
