@@ -37,6 +37,7 @@
     font: 30px "Leelawadee UI Semilight";
     padding: 1%;
     color: #fffefe;
+    width: initial;
 }
 
 .header-search{
