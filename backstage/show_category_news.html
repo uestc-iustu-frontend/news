@@ -1,0 +1,47 @@
+<h1>Category List</h1>
+{%  if category_list %}
+    <ul>
+    {% for category in category_list %}
+        <li><a href="{% url 'news:show_category_news' category.pk %}">{{ category.category }}</a></li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+
+
+
+
+
+
+{% if category %}
+    <h1>当前所在栏目：{{ category.category }}</h1>
+
+
+    <h1>News List</h1>
+    <ul>
+    {% for news in news_list %}
+        <li><a href="{% url 'news:show_news' news.pk %}">【{{ news.tittle }}】 {{ news.tittle }}</a></li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+
+
+{# 下面是翻页标签  样式： 上一页  1 2 3 ... 所有的页面   下一页   #}
+<p>
+{% if news_list.has_previous %}
+  <a href="?page={{ news_list.previous_page_number }}">Previous</a>
+  {% endif %}
+
+  {% for page_number in news_list.paginator.page_range %}
+    {% ifequal page_number  new_list.number %}
+      {{ page_number }}
+    {% else %}
+      <a href="?page={{ page_number }}">{{ page_number }}</a>
+    {% endifequal %}
+  {% endfor %}
+
+{% if news_list.has_next %}
+  <a href="?page={{ news_list.next_page_number }}">Next</a>
+{% endif %}
+</p>

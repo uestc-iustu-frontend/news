@@ -1,6 +1,6 @@
 .columns{
     margin: 10% 1%;
-    width: 270px;
+    width: 200px;
 }
 .colbtn {
     width: 100%;
@@ -37,12 +37,13 @@
     font: 30px "Leelawadee UI Semilight";
     padding: 1%;
     color: #fffefe;
+    width: initial;
 }
 
 .header-search{
     display: inline-block;
 
-    width:996px;
+    width:800px;
     margin-bottom:-20px ;
     position: relative;
     right: 0;
@@ -51,12 +52,12 @@
     margin-top:25px;
     position:relative;
     display: block;
-    width:996px;
+    width:inherit;
     height:50px;
 }
 .header-search .search-form .search-text{
     display: block;
-    width:945px;
+    width:800px;
     height:50px;
     line-height: 50px;
     border: 1px solid #e0e0e0;

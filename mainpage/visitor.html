@@ -25,7 +25,14 @@
         </div>
     </div>
     <div class="columns">
-        <button class=" colbtn" id="thisColumn">栏目1</button>
+            {%  if category_list %}
+                {% for category in category_list %}
+                     <a href="{% url 'news:show_category_news' category.pk %}">
+                        <button class="colbtn">{{ category.category }}</button>
+                     </a>
+                {% endfor %}
+            {% endif %}
+        <button class="colbtn" id="thisColumn">栏目1</button>
         <button class="colbtn" id="colbtn2">栏目2</button>
         <button class="colbtn">栏目3</button>
     </div>
