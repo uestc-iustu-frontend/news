@@ -23,18 +23,20 @@ input,img {
     vertical-align: middle;
 }
 
+
 .input-header{
     margin-bottom:32px;
 }
 
 .input-box-container{
     width: 372px;
-
     margin: 120px auto;
     top:50%;
 }
 li input{
     color:#a0a0a0;
+    position: relative;
+    right: 0;
 }
 
 ul{
@@ -50,6 +52,10 @@ input{
     font-size:21px;
     padding: 1.5% 8%;
     border-radius: 5px;
+    position: relative;
+}
+table{
+    text-align: left;
 }
 #s-register{
     text-align: center;
@@ -98,4 +104,3 @@ li #password,li .input-border-top{
     margin-top: 13px;
     color: #00cdb1;
 }
-

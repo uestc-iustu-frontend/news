@@ -21,22 +21,4 @@ var SAd = document.getElementById('s-ad');
         return 's-ad';
     }
 
-//验证码函数
-function createCode() {
-        var datas = ['A','B','C','D','E','F'];
-        var code = "";
-        for(var i = 0;i < 4;i++){
-            var index = Math.floor(Math.random()*datas.length);
-            code += datas[index];
-        }
-
-        var spanNode = document.getElementById("code");
-        spanNode.innerHTML = code;
-    }
-
-function ready() {
-    createCode();
-}
-
-document.getElementById('code').onclick=createCode();
 

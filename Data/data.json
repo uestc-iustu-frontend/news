@@ -1,0 +1,15 @@
+[
+  {
+    "model": "news.news",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "category": 1,
+      "tittle": "asdasd",
+      "date": "2019-07-18T11:22:10.432Z",
+      "author": "\\u6d2a\\u516b\\u516c",
+      "text": "redback",
+      "click_count": 0
+    }
+  }
+]
