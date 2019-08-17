@@ -222,7 +222,6 @@ $(function() {
             data: {
                 category: $('#addNav').val(),
                 tittle: $('#addTitle').val(),
-                user: $('#addAuthor').val()
             },
 
             type:'post',
@@ -259,7 +258,7 @@ $(function() {
     });
 
     //批量删除（ajax）
-    $('#dels').click(function () {
+    $('#delete').click(function () {
 
             var checked = $(':checkbox');
             console.log(checked.length);

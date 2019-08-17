@@ -1,14 +1,105 @@
 [
   {
     "model": "news.news",
-    "pk": 1,
+    "pk": 2,
     "fields": {
       "user": 1,
       "category": 1,
-      "tittle": "asdasd",
-      "date": "2019-07-18T11:22:10.432Z",
+      "tittle": "Test B",
+      "date": "2019-07-18T11:22:29.908Z",
       "author": "\\u6d2a\\u516b\\u516c",
-      "text": "redback",
+      "text": "\\u7535 \\u5b50\\u79d1\\u6280\\u5927\\u5b66",
+      "click_count": 0
+    }
+  },
+  {
+    "model": "news.news",
+    "pk": 3,
+    "fields": {
+      "user": 1,
+      "category": 1,
+      "tittle": "Test C",
+      "date": "2019-07-18T11:22:40.358Z",
+      "author": "\\u6d2a\\u516b\\u516c",
+      "text": "CCCCCCCCawedawd",
+      "click_count": 0
+    }
+  },
+  {
+    "model": "news.news",
+    "pk": 6,
+    "fields": {
+      "user": 1,
+      "category": 1,
+      "tittle": "TestA",
+      "date": "2019-07-19T05:08:05.169Z",
+      "author": "asd",
+      "text": "BACKTEST",
+      "click_count": 0
+    }
+  },
+  {
+    "model": "news.news",
+    "pk": 12,
+    "fields": {
+      "user": null,
+      "category": 1,
+      "tittle": "Json get tbl",
+      "date": "2019-08-09T12:24:02.561Z",
+      "author": "012",
+      "text": "",
+      "click_count": 0
+    }
+  },
+  {
+    "model": "news.news",
+    "pk": 13,
+    "fields": {
+      "user": null,
+      "category": 1,
+      "tittle": "jjjjson",
+      "date": "2019-08-09T12:24:25.421Z",
+      "author": "012",
+      "text": "",
+      "click_count": 0
+    }
+  },
+  {
+    "model": "news.news",
+    "pk": 14,
+    "fields": {
+      "user": null,
+      "category": 1,
+      "tittle": "OK\\uff01",
+      "date": "2019-08-09T12:29:29.927Z",
+      "author": "012",
+      "text": "",
+      "click_count": 0
+    }
+  },
+  {
+    "model": "news.news",
+    "pk": 15,
+    "fields": {
+      "user": null,
+      "category": 1,
+      "tittle": "biao ti xingmu",
+      "date": "2019-08-09T12:33:15.912Z",
+      "author": "nobody",
+      "text": "",
+      "click_count": 0
+    }
+  },
+  {
+    "model": "news.news",
+    "pk": 16,
+    "fields": {
+      "user": null,
+      "category": 1,
+      "tittle": "Json hui lai",
+      "date": "2019-08-09T12:34:43.108Z",
+      "author": "asd",
+      "text": "",
       "click_count": 0
     }
   }
