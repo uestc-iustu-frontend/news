@@ -10,6 +10,8 @@
 
 tr,td {
     border:none;
+    text-align: center;
+    margin-left:auto ;
 }
 table{
     width: 100%;
@@ -41,4 +43,7 @@ td{
 }
 #button{
     width: 5%;
+}
+.left-nav a{
+    color:#fff;
 }

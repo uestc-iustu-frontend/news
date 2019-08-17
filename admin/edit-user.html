@@ -4,10 +4,12 @@
 
     <meta charset="UTF-8">
     <title>edit-user</title>
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
     <link rel="stylesheet" href="../style/admin-common.css">
     <link rel="stylesheet" href="../style/edit-user.css">
     <link rel="stylesheet" href="../images/iconfont.css">
     <link rel="icon" href="../images/newslogo2.ico" type="image/x-icon">
+
 
 
 </head>
@@ -25,8 +27,34 @@
             </ul>
 
             <div class="right-box"  >
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">添加</button>
+                <button type="button" class="btn btn-primary" id="dels" >删除</button>
 
-                <div class="edit-list">
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="exampleModalLabel">添加发布者</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <label class="control-label">发布者</label>
+                                        <input type="text" class="form-control" id="addAuthor">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary submit" id="submit">提交</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!--<div class="edit-list">
                     <table id="order" class="order">
                         <tr>
                             <td id="allselect"> <input type="checkbox" id="alls"  onclick="allSelect(this)" />全选</td>
@@ -43,14 +71,28 @@
                         <input type="button" value="-"   onclick="dels()" />
                         <input type="submit" value="SAVE" >
                     </form>
+                </div>-->
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3>Thumbnail label</h3>
+                                <p>...</p>
+                                <p><a href="#" class="btn btn-primary" role="button">删除</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
 
-    <script src="../js/edit-user.js"></script>
 
-    <script src="../images/iconfont.js"></script>
 </body>
 </html>
+<script src="../js/lib/jquery-2.2.3.js"></script>
+<script src="../js/lib/bootstrap.min.js"></script>
+<script src="../js/edit-user.js"></script>
+
+<script src="../images/iconfont.js"></script>

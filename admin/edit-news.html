@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>edit-news</title>
-    <link rel="stylesheet" href="../style/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/admin-common.css">
 
+    <link rel="stylesheet" href="../style/admin-common.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
     <link rel="stylesheet" href="../images/iconfont.css">
     <link rel="icon" href="../images/newslogo2.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/edit-news.css">
@@ -42,7 +42,9 @@
 
                                     <div class="form-group">
                                         <label class="control-label">栏目</label>
-                                        <input type="text" class="form-control" id="addNav">
+                                        <select class="form-control" id="addNav">
+                                            <option>--请选择--</option>
+                                        </select>
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">标题</label>
@@ -61,7 +63,13 @@
                         </div>
                     </div>
                 </div>
-
+                <!--导航栏-->
+                <hr/>
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#">按时间</a></li>
+                    <li role="presentation" ><a href="#">按点击量</a></li>
+                </ul>
+                <hr/>
 
                 <div class="edit-list">
                     <table id="order" class="order">
@@ -73,7 +81,30 @@
                             <td id="author">发布者</td>
                             <td id="button">操作</td>
                         </tr>
-
+                       <!-- <tr class="news">
+                            <td><input type="checkbox"></td>
+                            <td> data3.category</td>
+                            <td class="tittle">data3.tittle</td>
+                            <td>data3.date</td>
+                            <td>data3.author</td>
+                            <td><input type="button" value="删除" class="btn-default btn del"></td>
+                        </tr>
+                        <tr class="news">
+                            <td><input type="checkbox"></td>
+                            <td> data2.category</td>
+                            <td class="tittle">data2.tittle</td>
+                            <td>data2.date</td>
+                            <td>data2.author</td>
+                            <td><input type="button" value="删除" class="btn-default btn del"></td>
+                        </tr>
+                        <tr class="news">
+                            <td><input type="checkbox"></td>
+                            <td> data1.category</td>
+                            <td class="tittle">data1.tittle</td>
+                            <td>data1.date</td>
+                            <td>data1.author</td>
+                            <td><input type="button" value="删除" class="btn-default btn del"></td>
+                        </tr>-->
                     </table>
                 </div>
                <!-- <div class="edit-btn">
@@ -84,6 +115,22 @@
                     </form>
                 </div>-->
 
+                <!--分页-->
+                <nav class="pages" aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous" class="disabled">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" aria-label="Next" class="disabled">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
             </div>
         </div>
@@ -91,7 +138,7 @@
 
     <script src="../js/lib/jquery-2.2.3.js"></script>
     <script src="../js/lib/bootstrap.min.js"></script>
-    <script src="https://code.ziqiangxuetang.com/django/django-csrf.html"></script>
+    <!--<script src="https://code.ziqiangxuetang.com/django/django-csrf.html"></script>-->
     <script src="../js/edit-news.js"></script>
     <script src="../images/iconfont.js"></script>
 </body>

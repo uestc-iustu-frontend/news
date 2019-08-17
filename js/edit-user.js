@@ -1,3 +1,4 @@
+/*
 
 
 //      添加函数
@@ -166,4 +167,5 @@ ui.prompt=function(s,f,c){
         'c':false,'s':s,'css':'ui_prompt','f':f
     })
 };
+*/
 

@@ -1,3 +1,4 @@
+/*
 function add(){
 //          获取表单元素
     var table = document.getElementById("order");
@@ -122,4 +123,122 @@ function allsn(){
     if(item.length ===0){
         alls.checked=false;
     }
-}
+}*/
+$(function () {
+    //ajax获取总页数
+    $(document).ready(function () {
+    $.ajax({
+        url:'',
+        type:'post',
+        data:{},
+        success:function (data) {
+            for(var i=1;i<=6;i++){
+                $('.pagination li').last().before('<li class="page-nums"><a href="#">'+i+'</a></li>');
+            }
+            var page=4;
+
+            $('.pagination li').eq(1).addClass('active');
+        }
+    })
+});
+    //ajax换页
+    $(document).on("click",".page-nums",function(){
+
+        $(".page-nums").removeClass("active");
+        $(this).addClass('active');
+        var index = $(".page-nums").index($(this))+1;
+        console.log(index);
+        $.ajax({
+            url:'',
+            type:'post',
+            data:{page:'index'},
+            success: function (data) {
+                data1 = JSON.parse(data);
+                // data2 = JSON.stringify(data1[0].fields)
+                // data3 = JSON.parse(data2)
+                for (var i = 0; i < data.length; i++) {
+                    data2 = JSON.stringify(data1[i].fields);
+                    data3 = JSON.parse(data2);
+                    var newRow = '<tr class="news"><td><input type="checkbox"></td> <td>' + data3.category + '</td> <td class="tittle">' + data3.tittle + '</td> <td>' + data3.date + '</td> <td>' + data3.author + '</td> <td><input type="button" value="删除" class="btn-default btn del"></td> </tr>';
+                    $('.order').append(newRow);
+                }
+            }
+        });
+    });
+
+    //添加————模板引擎
+    $('#submit').click(function () {
+        $.ajax({
+            url:'',
+            type:'post',
+            data:{
+                category:$('#addcategory').val()
+            },
+            success:function (data) {
+                data = JSON.parse(data);
+                var result = template('template', data);
+                $('.row').append(result);
+            }
+        })
+     /* var data = {
+            category:$('#addcategory').val()
+        }
+        var result = template('template', data);
+        $('.row').append(result);*/
+    });
+    /*var data1 = {
+        name:{category: 'policy'}
+    };
+    var data2 = {
+        category: 'biology'
+    }
+    var result = template('template', data1.name);
+    $('.row').append(result);
+    var result2 = template('template', data2);
+    $('.row').append(result2);*/
+    //全选&全不选
+    $('#All').click(function () {
+
+        var check = $(':checkbox');
+        console.log(check[0].checked);
+        if(check[0].checked==true){
+            for (var i = 0; i < check.length; i++) {
+                check[i].checked = true;
+            }
+        }else {
+            for (var i = 0; i < check.length; i++) {
+                check[i].checked = false;
+            }
+        }
+    });
+    //单个删除
+    $('.del').click(function () {
+        console.log($(this).parent().parent().parent().parent());
+        console.log($(".del").index($(this)));
+        $.ajax({
+            url:'' ,
+            type:'',
+            data:{
+                pk:$(".del").index($(this))
+            },
+            success:$(this).parent().parent().parent().parent().remove()
+        })
+    });
+    //批量删除
+    $('#dels').click(function () {
+        var checkbox = $(':checked');
+        console.log(checkbox[1]);
+        $("input[type='checkbox']:gt(0):checked").parent().parent().remove();
+        /*console.log(checkbox.length);
+        for(var i=1;i<checkbox.length;i++){
+            if(checkbox[i].checked == true){
+                console.log(checkbox[i]);
+                console.log(i);
+                checkbox[i].fadeOut(3000);
+                /!*i--;*!/
+            }
+        }*/
+    })
+
+
+})
