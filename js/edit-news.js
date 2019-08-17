@@ -339,11 +339,18 @@ $(function() {
             {
                 url:'/manage/news/add/',
 
+<<<<<<< HEAD
                 data: {
                     category: $('#addNav').val(),
                     tittle: $('#addTitle').val(),
                     author: $('#addAuthor').val()
                 },
+=======
+            data: {
+                category: $('#addNav').val(),
+                tittle: $('#addTitle').val(),
+            },
+>>>>>>> 0e67065fca1171928d2f541537a79a9d11775b32
 
                 type:'post',
 
@@ -385,6 +392,7 @@ $(function() {
     });
 
     //批量删除（ajax）
+<<<<<<< HEAD
     // /*var tittle = $("td[class='tittle']").eq(i).text();*/
     $('#dels').click(function () {
         var length = $(":checkbox").length;
@@ -406,6 +414,25 @@ $(function() {
             let checked = $(':checked').length;
             for(let i=1;i< checked;i++){
                 $(':checked').eq(1).parent().parent().remove();
+=======
+    $('#delete').click(function () {
+
+            var checked = $(':checkbox');
+            console.log(checked.length);
+            for (var i = 1; i < checked.length; i++) {
+                if(checked[i].checked == true){
+                    $.ajax(
+                        {
+                            url:'/manage/news/delete_muli/',
+                            type:'post',
+                            data:{pk:i},
+                            success: function (data) {
+                                checked[i].parent().parent().remove();
+                            }
+                        }
+                    );
+                }
+>>>>>>> 0e67065fca1171928d2f541537a79a9d11775b32
             }
             $(':checkbox')[0].checked = false;
         }

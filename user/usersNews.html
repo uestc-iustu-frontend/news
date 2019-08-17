@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>发布者新闻</title>
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../images/iconfont.css">
+    <link rel="icon" href="../images/newslogo2.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="../style/framework.css">
     <link rel="stylesheet" href="../style/usersNews.css">
 </head>
@@ -23,26 +27,78 @@
     <div class="rightcol">
         <div class="box">
             <div class="searchbox">
-                <form action="" method="post" ><input id="search" type="text"></form>
-                <button id="add" class="action" onclick="add()">添加新闻</button>
+                <div class="header-search search-box">
+                    <form class="search-form" action="" method="get">
+                        {% csrf_token %}
+                        <input type="search" name="keyword" class="search-text"/>
+                        <input type="submit" value="&#xe60b" class="search-botton iconfont" />
+                    </form>
+                </div>
+                <button id="add" class="action btn-primary" data-toggle="modal" data-target="#exampleModal">添加新闻</button>
                 <button id="delete" class="action">批量删除</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="exampleModalLabel">添加新闻</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <form class="msg">
+
+                                    <div class="form-group">
+                                        <label class="control-label">栏目</label>
+                                        <input type="text" class="form-control" id="addNav">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">标题</label>
+                                        <input type="text" class="form-control" id="addTitle">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                                <button type="button" class="btn btn-primary submit" id="submit" onclick="add()">提交</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="order">
-                <button id="bytime">按时间</button>
-                <button id="clicktimes">按点击量</button>
+                <form class="order" method="get">
+                    <button id="bytime">按时间</button>
+                    <button id="byclick">按点击量</button>
+                </form>
+
             </div>
             <div class="list">
                 <table id="order" class="order">
                     <tr>
-                        <td id="category">类别</td>
-                        <td id="title">标题</td>
-                        <td id="time">发布时间</td>
-                        <td id="button">操作</td>
+                        <th id="allselect"> <input class="btn btn-default" type='checkbox'/>全选</th>
+                        <th id="category">类别</th>
+                        <th id="title">标题</th>
+                        <th id="time">发布时间</th>
+                        <th id="button">操作</th>
                     </tr>
                 </table>
             </div>
             <div class="pages">
+                {% if news_list.has_previous %}
+                <a href="?page={{ news_list.previous_page_number }}">Previous</a>
+                {% endif %}
 
+                {% for page_number in news_list.paginator.page_range %}
+                {% ifequal page_number  new_list.number %}
+                {{ page_number }}
+                {% else %}
+                <a href="?page={{ page_number }}">{{ page_number }}</a>
+                {% endifequal %}
+                {% endfor %}
+
+                {% if news_list.has_next %}
+                <a href="?page={{ news_list.next_page_number }}">Next</a>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -57,7 +113,12 @@
 
     <div>本页面由xxxxxx工作室提供支持</div>
 </div>
+<script src="../js/lib/jquery-2.2.3.js"></script>
+<script src="../js/lib/bootstrap.min.js"></script>
+<script type="text/html" src="../js/lists2.html" id="template"></script>
+<script type="text/javascript" src="../js/lib/art-template.js"></script>
 <script type="text/javascript" src="../js/addLoadEvent.js"></script>
+<script type="text/javascript" src="../js/usersNews.js"></script>
 <script type="text/javascript" src="../js/leftCol.js"></script>
 <script type="text/javascript" src="../js/lists.js"></script>
 

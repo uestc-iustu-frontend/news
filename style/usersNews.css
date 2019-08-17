@@ -36,3 +36,55 @@ td{
     padding: 0.5%;
     font-size: 90%;
 }
+.pages{
+    position: absolute;
+    bottom: 50px;
+    float: right;
+}
+.header-search{
+    display: inline-block;
+
+    width:800px;
+    margin-bottom:-20px ;
+    position: relative;
+    right: 0;
+}
+.header-search .search-form{
+    margin-top:25px;
+    position:relative;
+    display: block;
+    width:inherit;
+    height:50px;
+}
+.header-search .search-form .search-text{
+    display: block;
+    width:500px;
+    height:50px;
+    line-height: 50px;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+    float: left;
+    position: absolute;
+    top:0;
+    right: 51px;
+    font-size: 16px;
+}
+.header-search .search-form .search-botton{
+    display: block;
+    width:52px;
+    height:50px;
+    border: 1px solid #e0e0e0;
+    float: left;
+    font-size:24px;
+    line-height: 50px;
+    background-color: #fff;
+    color:#616161;
+    outline: 0;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.header-search .search-form .search-botton:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
