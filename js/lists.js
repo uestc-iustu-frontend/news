@@ -13,7 +13,7 @@ function listBack(){
 }
 addLoadEvent(listBack);
 function show(lb, title) {
-    if (title!=null&&title!=""){
+    if (title!=null&&title!=""&&lb!=null&&lb!=""){
         let newrow=document.createElement("tr");
         let nlb=document.createElement("td");
         let nbt=document.createElement("td");
@@ -22,7 +22,7 @@ function show(lb, title) {
         let date=new Date();
         let year=date.getFullYear();
         let month=date.getMonth()+1;
-        let day=date.getDay()+1;
+        let day=date.getDate();
         nlb.innerHTML="【"+lb+"】";
         nbt.innerHTML=title;
         nsj.innerHTML=year+"年"+month+"月"+day+"日";
@@ -47,9 +47,9 @@ function show(lb, title) {
 }
 // 编写一个函数，供添加按钮调用，动态在表格的最后一行添加子节点；
 function add() {
-    let lb=prompt("新闻类别","");
-    let title=prompt("新闻题目","");
-    show(lb,title);
+    let addNav = document.querySelector("addNav").val();
+    let addTitle = document.querySelector("addTitle").val();
+    show(addNav, addTitle);
 }
 
 

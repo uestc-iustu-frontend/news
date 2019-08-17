@@ -87,3 +87,13 @@
     background-color: #ff6700;
     color: #fff;
 }
+.list{
+    width: initial;
+    min-height: 400px;
+    position: relative;
+    top: 50px;
+}
+tr{
+    background-color: #ff6700;
+    color: #fff;
+}
