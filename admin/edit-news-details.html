@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>新闻发布页面（管理者）</title>
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/e-n-d.css">
     <link rel="stylesheet" href="../style/admin-common.css">
-    <script src="../js/edit-news.js"></script>
     <link rel="stylesheet" href="../images/iconfont.css">
     <link rel="icon" href="../images/newslogo2.ico" type="image/x-icon">
+
 
 </head>
 <body>
@@ -27,30 +28,37 @@
         <div class="right-box"  >
 
             <div class="container-news">
-                <form action="#" method='post'>
-                    <div>
-                        标题<input type="text" name="title" value="">
-                    </div>
+                <form>
+
+                        标题<input class="form-control" type="text" name="title" id="tittle" value="">
+
+
+                        类别<select class="form-control" id="category" width="50px">
+                                <option>--请选择--</option>
+                            </select>
+
+                        来源<input type="text" class="form-control" name="author" id="author" value="" >
+
 
                     <div>
-                        类别<input type="text" name="category" value="">
-                        来源<input type="text" name="author" value="" >
+                        正文<textarea style="overflow-y:visible; resize: none" class="form-control" rows="12" cols="78" id="text" name="text" ></textarea>
                     </div>
+                    <hr>
                     <div>
-                        正文
-                        <textarea style="overflow-y:visible; resize: none"  rows="15" cols="78" name="text" ></textarea>
+                        <input type="button" class="btn" name="agree" id="agree" value="确认发布">
+                        <input type="button" class="btn" name="cancel" id="cancel" value="放弃编辑">
                     </div>
 
-                    <div>
-                        <input type="submit" name="agree" id="agree" value="确认发布">
-                        <a href=""><input type="button" name="cancel" id="cancel" value="放弃编辑"></a>
-                    </div>
                 </form>
             </div>
-
+            <hr>
         </div>
     </div>
 </div>
-<script src="../images/iconfont.js"></script>
+
 </body>
 </html>
+<script src="../images/iconfont.js"></script>
+<script src="../js/lib/jquery-2.2.3.js"></script>
+<script src="../js/lib/bootstrap.min.js"></script>
+<script src="../js/edit-news-details.js"></script>

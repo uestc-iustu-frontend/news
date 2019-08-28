@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>edit-program</title>
     <link rel="stylesheet" href="../style/bootstrap.min.css">
-    <link rel="stylesheet" href="../style/admin-common.css">
     <link rel="stylesheet" href="../style/news-program.css">
+    <link rel="stylesheet" href="../style/admin-common.css">
     <link rel="stylesheet" href="../images/iconfont.css">
     <link rel="icon" href="../images/newslogo2.ico" type="image/x-icon">
 
@@ -53,51 +53,9 @@
             <hr>
 
             <div class="row" name="box">
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>{{category}}1</h3><input type="checkbox">
-                            <p> <button class="btn btn-primary del">删除</button></p>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>{{category}}2</h3><input type="checkbox">
-                            <p> <button class="btn btn-primary del">删除</button></p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>{{category}}3</h3><input type="checkbox">
-                        <p> <button class="btn btn-primary del">删除</button></p>
-                    </div>
-                </div>
             </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>{{category}}4</h3><input type="checkbox">
-                        <p> <button class="btn btn-primary del">删除</button></p>
 
-                    </div>
-                </div>
-            </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="thumbnail">
-                        <div class="caption">
-                            <h3>{{category}}5</h3><input type="checkbox">
-                            <p> <button class="btn btn-primary del">删除</button></p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!--分页-->
             <nav class="pages" aria-label="Page navigation">
                 <ul class="pagination">
@@ -128,11 +86,12 @@
 <script src="../js/lib/template-web.js"></script>
 
 <script type="text/html" id="template">
-    <div class="col-sm-6 col-md-4 col-lg-4">
+    <div class="col-sm-6 col-md-4 col-lg-4 rowChild">
         <div class="thumbnail">
             <div class="caption">
-                <h3>{{category}}</h3><input type="checkbox">
-                <p> <button class="btn btn-primary del">删除</button></p>
+                <a href={{url}}><h3><%= category %></h3></a>
+                <input type="checkbox">
+                <p> <button class="btn btn-primary del" >删除</button></p>
 
             </div>
         </div>
@@ -140,4 +99,4 @@
 </script>
 
 <script src="../js/lib/bootstrap.min.js"></script>
-<script src="../js/edit-program.js"></script>
+<script src="../js/edit-category.js"></script>

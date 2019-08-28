@@ -27,6 +27,7 @@
             </ul>
 
             <div class="right-box"  >
+                全选<input type="checkbox" id="All"/>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">添加</button>
                 <button type="button" class="btn btn-primary" id="dels" >删除</button>
 
@@ -54,36 +55,27 @@
                     </div>
                 </div>
                 <hr>
-                <!--<div class="edit-list">
-                    <table id="order" class="order">
-                        <tr>
-                            <td id="allselect"> <input type="checkbox" id="alls"  onclick="allSelect(this)" />全选</td>
-                            <td id="author">发布者</td>
-                            <td id="button">操作</td>
-                        </tr>
 
-                    </table>
-                </div>
-                <div class="edit-btn">
-
-                    <form action=""  method="post">
-                        <input type="button" value="+"  data-toggle="modal" onclick="add()" />
-                        <input type="button" value="-"   onclick="dels()" />
-                        <input type="submit" value="SAVE" >
-                    </form>
-                </div>-->
                 <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                            <div class="caption">
-                                <h3>Thumbnail label</h3>
-                                <p>...</p>
-                                <p><a href="#" class="btn btn-primary" role="button">删除</a></p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
 
+                <!--分页-->
+                <nav class="pages" aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous" class="disabled">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" aria-label="Next" class="disabled">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
@@ -93,6 +85,16 @@
 </html>
 <script src="../js/lib/jquery-2.2.3.js"></script>
 <script src="../js/lib/bootstrap.min.js"></script>
-<script src="../js/edit-user.js"></script>
-
+<script src="../js/edit-releaser.js"></script>
+<script src="../js/lib/template-web.js"></script>
+<script type="text/html" id="template">
+    <div class="col-sm-6 col-md-4 rowChild">
+        <div class="thumbnail">
+            <div class="caption">
+                <h3>{{author}}</h3><input type="checkbox">
+                <p><a href="#" class="btn btn-primary del" role="button">删除</a></p>
+            </div>
+        </div>
+    </div>
+</script>
 <script src="../images/iconfont.js"></script>
